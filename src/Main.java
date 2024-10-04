@@ -38,6 +38,9 @@ public class Main {
         if (speler_A.nextLine().equals("yes")) {
             pokemonGym.enteredTheGym(player1);
         }
+        else{
+            System.out.println("You are a coward!");
+        }
 
     }
 

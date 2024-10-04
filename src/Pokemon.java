@@ -1,18 +1,17 @@
 public abstract class Pokemon {
     private final String name;
     private final int level;
-    private final int hp;
+    private int hp;
     private final String food;
     private final String sound;
     private String type;
 
-    public Pokemon(String name, int level, int hp, String food, String sound, String type) {
+    public Pokemon(String name, int level, int hp, String food, String sound) {
         this.name = name;
         this.level = level;
         this.hp = hp;
         this.food = food;
         this.sound = sound;
-        this.type = type;
     }
 
     public String getName() {
@@ -41,6 +40,10 @@ public abstract class Pokemon {
 
     public void setType(String type){
         this.type = type;
+    }
+
+    public void setHp(int hp){
+        this.hp = hp;
     }
 
 
