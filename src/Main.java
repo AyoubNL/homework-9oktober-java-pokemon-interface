@@ -18,6 +18,7 @@ public class Main {
     private static final ElectricPokemon raichu = new ElectricPokemon("Raichu", 80, 160, "Pokebrocks", "Raaaaiiiiicccchhhhuuuuuuu!!!!");
     private static final WaterPokemon gyarados = new WaterPokemon("Gyarados", 90, 180, "Pokeflakes", "Gyaaaaaaaaarrrraaaadoooos");
 
+
     private static List<Pokemon> pokemons = Arrays.asList(charizard, blastoise, venusaur, ditto, raichu, gyarados);
 
 
@@ -36,6 +37,9 @@ public class Main {
         System.out.println("Please enter yes or no");
         if (speler_A.nextLine().equals("yes")) {
             pokemonGym.enteredTheGym(player1);
+        }
+        else{
+            System.out.println("You are a coward!");
         }
 
     }
